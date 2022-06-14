@@ -19,6 +19,7 @@ from frontend.views import cuerpo, donacion, gatos, nosotros, otros, Perros, Pet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', PetsFriends),
     path('cuerpo/', cuerpo),
     path('donacion/', donacion),
     path('gatos/', gatos),
