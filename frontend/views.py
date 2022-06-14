@@ -22,9 +22,9 @@ def Perros(request):
 def PetsFriends(request):
     return render(request, 'PetsFriends.html')
 
-def SignIn(request):
-    return render(request, 'SignIn.html')
+def signIn(request):
+    return render(request, 'signIn.html')
 
-def SignUp(request):
-    return render(request, 'SignUp.html')
+def signUp(request):
+    return render(request, 'signUp.html')
 

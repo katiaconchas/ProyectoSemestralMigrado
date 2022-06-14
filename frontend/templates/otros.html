@@ -8,7 +8,7 @@
   <title>Pets Friends</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <script src="https.//code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
   <link href="Estilos.css" type="text/css" rel="stylesheet">
   <link href="Img/Icon.png" rel="icon">
@@ -53,17 +53,17 @@
     <!--logo-->
     <div class="row"> 
       <div class="col">
-        <a href="PetsFriends.html">
+        <a href="">
           <img src="{% static 'Img/Logo.jpg' %}" alt="Logo" height="auto" width="auto">
         </a>
         <div id="login">
-          <a href="signIn.html">
+          <a href="signIn/">
             <i class="bi bi-person-circle"> Iniciar sesión &nbsp; &nbsp;</i>
           </a>
-          <a href="signUp.html">
+          <a href="signUp/">
             <i class="bi bi-person-plus-fill"> Registrarse &nbsp; &nbsp;</i>
           </a>
-          <a href="compras.html">
+          <a href="compras/">
             <i class="bi bi-cart4"></i>
           </a>
         </div>
@@ -76,27 +76,27 @@
       <div clas="col"  style="background-color: greenyellow;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="PetsFriends.html">Inicio</a>
+            <a class="navbar-brand" href="">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  <a class="nav-link active" aria-current="page" href="nosotros/">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="donacion.html">Donación</a>
+                  <a class="nav-link active" aria-current="page" href="donacion/">Donación</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Productos
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="perros.html">Perros</a></li>
-                    <li><a class="dropdown-item" href="gatos.html">Gatos</a></li>
+                    <li><a class="dropdown-item" href="perros/">Perros</a></li>
+                    <li><a class="dropdown-item" href="gatos/">Gatos</a></li>
                     
-                    <li><a class="dropdown-item" href="otros.html">Otros</a></li>
+                    <li><a class="dropdown-item" href="otros/">Otros</a></li>
                   </ul>
                 </li>
               </ul>
@@ -118,9 +118,9 @@
         <div class="col-lg-12">
             <nav class="nav-filtros botones">
                 <ul>
-                    <li><a href="Perros.html" title="perros" class="boton-pastilla pastilla-perros activo"><i class="icon-icono_accesorios"></i><span>Perros</span></a></li>
-                    <li><a href="gatos.html" title="gatos" class="boton-pastilla pastilla-perros "><i class="icon-icono_farmacia"></i><span>Gatos</span></a></li>
-                    <li><a href="otros.html" title="otros" class="boton-pastilla pastilla-perros "><i class="icon-icono_juguetes"></i><span>Otros</span></a></li>
+                    <li><a href="Perros/" title="perros" class="boton-pastilla pastilla-perros activo"><i class="icon-icono_accesorios"></i><span>Perros</span></a></li>
+                    <li><a href="gatos/" title="gatos" class="boton-pastilla pastilla-perros "><i class="icon-icono_farmacia"></i><span>Gatos</span></a></li>
+                    <li><a href="otros/" title="otros" class="boton-pastilla pastilla-perros "><i class="icon-icono_juguetes"></i><span>Otros</span></a></li>
 
                 </ul>
             </nav>
@@ -128,7 +128,7 @@
     </div>
     <!--Inicio Categorias-->
     <div class="row">
-        <form id="form-filtro" class="form-filtro" method="post" action="Perros.html">
+        <form id="form-filtro" class="form-filtro" method="post" action="Perros/">
                     <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="bloque-curvo blanco">
                                     <div class="col-sm-6 col-md-12 col-lg-12 bloque-filtro ">
@@ -185,7 +185,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="col-sm-6 col-md-6 col-lg-4 item-lista">
                                 <div class="block-producto">
-                                    <a id="a_link_1916" href="otros.html" data-prod_id="1916" data-prod_name="Ruffwear Knot A Collar Red" class="catalogo_click_detail">
+                                    <a id="a_link_1916" href="otros/" data-prod_id="1916" data-prod_name="Ruffwear Knot A Collar Red" class="catalogo_click_detail">
                                         <div class="item">                                        
                                             
                                             
@@ -345,11 +345,11 @@
         <div class="col-2 footer-links">
           <h4>General</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="PetsFriends.html">Inicio</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="nosotros.html">Nosotros</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="donacion.html">Donación</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="Perros.html">Perros</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="gatos.html">Gatos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="">Inicio</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="nosotros/">Nosotros</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="donacion/">Donación</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="Perros/">Perros</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="gatos/">Gatos</a></li>
           </ul>
         </div>
         <!--Inicio API-->
