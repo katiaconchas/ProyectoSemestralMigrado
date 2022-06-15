@@ -122,14 +122,14 @@
     
       <div class="row">
         <div class="col-4">
-         <form action="principla/." method="get" id="formulario">
-          
+         <form action="/validarUsuario/" method="post" id="formulario">
+          {% csrf_token %}
           <div class="form-group">
-            <label for="nombre">Nombre usuario</label>
-            <input type="text" name="nombre usuario" id="nombre" placeholder="ingrese nombre usuario" class="validate[required]"
-            data-errormessage-value-missing="EL nombre de usuario no puede estar en blanco" value=""/>
-          </div>
-          
+            <label for="nombre">Correo electrónico</label>
+            <input type="email" name="email" id="mail" placeholder="user@PetsFriends.com" class="validate[required,custom[email]]"
+            data-errormessage-value-missing="El correo no puede estar en blanco"
+            data-errormessage-value-missing="Formato: usuario@xmail.com" value=""/>
+          </div>          
           <br>
           <div class="form-group">
             <fieldset>
