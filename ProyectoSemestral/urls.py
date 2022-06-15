@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from frontend.views import cuerpo, donacion, gatos, nosotros, otros, Perros, PetsFriends, signIn, signUp
+from backend.views import signIn
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +29,5 @@ urlpatterns = [
     path('Perros/', Perros),
     path('signIn/', signIn),
     path('signUp/', signUp),
-    
+    path('signIn/', signIn),
 ]
