@@ -26,4 +26,4 @@ def validarUsuario(request):
 def PetsFriends_usuario(request):
     if 'usuario' not in request.session:
         return redirect('/signIn/')
-    return render(request, 'Pets_Friends_usuario.html')
+    return render(request, 'PetsFriends_usuario.html')
