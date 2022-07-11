@@ -27,4 +27,3 @@ def signIn(request):
 
 def signUp(request):
     return render(request, 'signUp.html')
-

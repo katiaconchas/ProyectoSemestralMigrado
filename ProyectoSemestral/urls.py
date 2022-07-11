@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from frontend.views import cuerpo, donacion, gatos, nosotros, otros, Perros, PetsFriends, signIn, signUp
-from backend.views import signIn, validarUsuario, PetsFriends_usuario
+from backend.views import signIn, validarUsuario, PetsFriends_usuario, guardarUsuario
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +31,7 @@ urlpatterns = [
     path('signUp/', signUp),
     path('signIn/', signIn),
     path('validarUsuario/', validarUsuario),
-    path('PetsFriends_usuario/', PetsFriends_usuario)
+    path('PetsFriends_usuario/', PetsFriends_usuario),
+    path('guardarUsuario/', guardarUsuario)
+
 ]

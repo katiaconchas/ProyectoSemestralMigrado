@@ -120,7 +120,7 @@
       
       <div class="row">
         <div class="col-4">
-          <form action="validarUsuario" method="post" id="formulario">
+          <form action="guardarUsuario" method="post" id="formulario">
             {% csrf_token %}
             <div class="form-group">
 
@@ -130,26 +130,22 @@
               data-errormessage-value-missing="El correo no puede estar en blanco"
               data-errormessage-value-missing="Formato: usuario@xmail.com" value=""/>
             </div>
-            <br>
-            <div class="form-group">
-              <label for="nombre">Nombre usuario</label>
-              <input type="text" name="nombre usuario" id="nombre usuario" placeholder="ingrese nombre usuario" class="validate[required]"
-              data-errormessage-value-missing="EL nombre de usuario no puede estar en blanco" value=""/>
-            </div>
-            <br>
             <div class="form-group">
               <fieldset>
                 <label>
                   <span>Contraseña: </span>
                   <input value="karnius" class="validate[required] text-input" type="password" name="password" id="password" />
                 </label>
-                <br>
-                <label>
-                  <span>Confirmar contraseña: </span>
-                  <input value="kaniusBAD" class="validate[required,equals[password]] text-input" type="password" name="password2" id="password2" />
-                  <br/>
-                  
-                </label>
+            <div class="form-group">
+              <label for="nombre">Primer Nombre</label>
+              <input type="text" name="pnombre" id="pnombre" placeholder="ingrese nombre usuario" class="validate[required]"
+              data-errormessage-value-missing="El nombre de usuario no puede estar en blanco" value=""/>
+            </div>
+            <div class="form-group">
+              <label for="nombre">Apellido Paterno</label>
+              <input type="text" name="appaterno" id="appaterno" placeholder="ingrese nombre usuario" class="validate[required]"
+              data-errormessage-value-missing="El apellido del usuario no puede estar en blanco" value=""/>
+            </div>
               </fieldset>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
