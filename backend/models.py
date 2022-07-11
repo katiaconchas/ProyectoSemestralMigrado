@@ -15,3 +15,6 @@ class Usuario_signup(models.Model):
     password = models.CharField(max_length=15)
     pnombre = models.CharField(max_length=50)
     appaterno = models.CharField(max_length=50)
+
+
+
