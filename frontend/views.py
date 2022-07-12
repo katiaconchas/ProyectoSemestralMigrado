@@ -60,15 +60,17 @@ def guardarProducto(request):
 
     return redirect('../api/')
     
-def eliminarProducto(request, p_idproducto):
-    buscado=Producto.objects.get(idproducto=p_idproducto)
+    #no toma el request y dice que falta un argumento posicional.
+def eliminarProducto(request, p_idProducto):
+    buscado=Producto.objects.get(idProducto=p_idProducto)
     if(buscado):
         Producto.delete(buscado)
-        return redirect('../api/')
+        return redirect(request, '../api/')
+
 
 
 def buscarProducto(request, p_idProducto):
-    buscado=Producto.objects.get(idproducto=p_idProducto)
+    buscado=Producto.objects.get(idProducto=p_idProducto)
     datos={'producto': buscado}
     return render(request, 'modificar.html', datos)
 

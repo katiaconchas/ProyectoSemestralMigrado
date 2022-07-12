@@ -20,9 +20,9 @@
             <form method="post" action="/guardarProductoModificado/" id="formulario">
                 {% csrf_token %}
                 <div class="form-group">
-                    <label for="idproducto">ID producto</label>
-                    <input type="number" id="idproducto" name="idproducto" class="form-control"
-                    value="{{producto.idproducto}}" readonly="true">
+                    <label for="idProducto">ID producto</label>
+                    <input type="number" id="idProducto" name="idProducto" class="form-control"
+                    value="{{Producto.idProducto}}" readonly="true">
                 </div>
                 <div class="form-group">
                     <label for="nombre">Nombre producto</label>

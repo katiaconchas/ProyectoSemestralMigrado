@@ -35,9 +35,9 @@ urlpatterns = [
     path('guardarUsuario/', guardarUsuario),
     path('api/', include('api.urls')),
     path('api/', home),
-    path('modificar/', buscarProducto),
+    path('api/modificarProducto/', buscarProducto),
     path('guardarProducto/', guardarProducto),
-    path('eliminarProducto/', eliminarProducto),
+    path('api/eliminarProducto/', eliminarProducto),
     path('guardarProductoModificado/', guardarProductoModificado)
 
 
