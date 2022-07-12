@@ -58,16 +58,17 @@ def guardarProducto(request):
 
     Producto.save(nuevo)
 
-    return redirect('api/')
+    return redirect('../api/')
     
-def eliminarProducto(request, p_idProducto):
-    buscado=Producto.objects.get(idProducto=p_idProducto)
+def eliminarProducto(request, p_idproducto):
+    buscado=Producto.objects.get(idproducto=p_idproducto)
     if(buscado):
         Producto.delete(buscado)
-        return redirect('/')
+        return redirect('../api/')
+
 
 def buscarProducto(request, p_idProducto):
-    buscado=Producto.objects.get(idProducto=p_idProducto)
+    buscado=Producto.objects.get(idproducto=p_idProducto)
     datos={'producto': buscado}
     return render(request, 'modificar.html', datos)
 
@@ -80,10 +81,11 @@ def guardarProductoModificado(request):
     buscado=Producto.objects.get(idProducto=v_idproducto)
 
     if(buscado):
+        buscado.idproducto=v_idproducto
         buscado.nombre=v_nomproducto
         buscado.stock=v_stockproducto
         buscado.precio=v_preproducto
 
         Producto.save(buscado)
-        return redirect('/')
+        return redirect('../api/')
 

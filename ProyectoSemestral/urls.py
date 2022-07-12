@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from frontend.views import cuerpo, donacion, gatos, home, nosotros, otros, Perros, PetsFriends, signIn, signUp, home, modificar, guardarProducto, eliminarProducto, guardarProductoModificado, buscarProducto
+from frontend.views import buscarProducto, cuerpo, donacion, gatos, home, nosotros, otros, Perros, PetsFriends, signIn, signUp, home, guardarProducto, guardarProductoModificado, eliminarProducto
 from backend.views import signIn, validarUsuario, PetsFriends_usuario, guardarUsuario
 
 urlpatterns = [
@@ -23,7 +23,7 @@ urlpatterns = [
     path('', PetsFriends),
     path('cuerpo/', cuerpo),
     path('donacion/', donacion),
-    path('gatos/', gatos),
+    path('gatos/', gatos), 
     path('nosotros/', nosotros),
     path('otros/', otros),
     path('Perros/', Perros),
@@ -35,11 +35,10 @@ urlpatterns = [
     path('guardarUsuario/', guardarUsuario),
     path('api/', include('api.urls')),
     path('api/', home),
-    path('modificar/', modificar),
+    path('modificar/', buscarProducto),
     path('guardarProducto/', guardarProducto),
-    path('eliminarProducto', eliminarProducto),
-    path('guardarProductoModificado/', guardarProductoModificado),
-    path('buscarProducto/', buscarProducto)
+    path('eliminarProducto/', eliminarProducto),
+    path('guardarProductoModificado/', guardarProductoModificado)
 
 
 ]

@@ -38,7 +38,8 @@
                 <br>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
-                    <input type="reset" class="btn btn-secondary" id="limpiar" value="Limpiar">
+                    <input type="submit" class="btn btn-secondary" id="listar" value="listar">
+                    <!--<input type="reset" class="btn btn-" id="limpiar" value="Limpiar">-->
             </div>
             </form>
             
@@ -50,17 +51,18 @@
                 <th>Precio</th>
                 <th>Stock</th>
                 <th colspan="2">Acciones</th>
-                {% for p in productos%}
+                {% for p in producto%}
                 <tr>
                     <td>{{p.idProducto}}</td>
                     <td>{{p.nombre}}</td>
                     <td>{{p.stock}}</td>
                     <td>{{p.precio}}</td>
-                    <td><a href="eliminarProducto/{{p.idProducto}}">Eliminar</a></td>
-                    <td><a href="modificarProducto/{{p.idProducto}}">Modificar</a></td>
+                    <td><a href="eliminarProducto/{{p.idproducto}}">Eliminar</a></td>
+                    <td><a href="modificarProducto/{{p.idproducto}}">Modificar</a></td>
                 </tr>
                 {%endfor%}
             </table>
+            
         </div>
 
     </div>
